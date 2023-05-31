@@ -1,0 +1,54 @@
+
+  .drag-container {
+    display: flex;
+  }
+
+  .drag-source {
+    margin-right: 20px;
+  }
+
+
+
+  .dragged-element {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .imgD, img{
+    height: 200px;
+    width: 200px;
+  }
+
+
+  .drag-source {
+    padding: 10px;
+  }
+
+  .drag-source img {
+    width: 200px;
+    height: 200px;
+    cursor: move;
+  }
+
+  .drag-target {
+    width: 500px;
+    height: 500px;
+    border: 2px solid gray;
+    background: #00000079;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .drag-storage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+  }
+
+  .dragged-element {
+    pointer-events: none;
+  }
+
+
